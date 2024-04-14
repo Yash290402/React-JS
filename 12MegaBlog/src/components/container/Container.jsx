@@ -1,9 +1,9 @@
-import React, { Children } from 'react';
+import React from 'react';
 
-function Container(props) {
+function Container({children}) {
     return (
         <div className='w-full max-w-7xl mx-auto'>
-            {Children}
+            {children}
         </div>
     );
 }

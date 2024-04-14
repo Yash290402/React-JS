@@ -6,14 +6,14 @@ import Logout from "./header/Logout"
 import Button from './Button'
 import Input from './Input'
 import RTE from "./RTE"
-import SignUp from "./Signup"
+import SignUp from "../components/SignUp"
 import Login from "./Login"
-import Post from "./Post"
 import PostForm from "./post-from/Postfrom"
 import PostCard from './PostCard'
 import AuthLayout from './AuthLayout'
+import select from '../components/Select'
 
-export{
+export {
     Header,
     Footer,
     Container,
@@ -24,8 +24,8 @@ export{
     RTE,
     SignUp,
     Login,
-    Post,
     PostForm,
     PostCard,
-    AuthLayout
+    AuthLayout,
+    select
 }

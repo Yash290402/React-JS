@@ -1,4 +1,4 @@
-import conf from "../conf/conf";
+import conf from "../conf/conf.js";
 import { Client, Databases, ID, Storage, Query } from "appwrite";
 
 export class Service {
@@ -31,7 +31,7 @@ export class Service {
                 }
             )
         } catch (error) {
-            console.error(error);
+            console.log("Appwrite serive :: createPost :: error", error);
         }
     }
 
@@ -49,7 +49,7 @@ export class Service {
                 }
             )
         } catch (error) {
-            console.error(error);
+            console.log("Appwrite serive :: updatePost :: error", error);
         }
     }
 
@@ -62,7 +62,7 @@ export class Service {
             )
             return true;
         } catch (error) {
-            console.error(error);
+            console.log("Appwrite serive :: deletePost :: error", error);
             return false;
         }
     }
@@ -76,7 +76,8 @@ export class Service {
             )
 
         } catch (error) {
-            console.error(error);
+            console.log("Appwrite serive :: getPost :: error", error);
+            return false;
         }
     }
 
@@ -88,7 +89,8 @@ export class Service {
                 queries
             )
         } catch (error) {
-            console.error(error);
+            console.log("Appwrite serive :: getPosts :: error", error);
+            return false
         }
     }
 
@@ -102,7 +104,7 @@ export class Service {
                 file
             )
         } catch (error) {
-            console.error(error);
+            console.log("Appwrite serive :: uploadFile :: error", error);
             return false;
         }
     }
@@ -115,7 +117,7 @@ export class Service {
             )
             return true;
         } catch (error) {
-            console.error(error);
+            console.log("Appwrite serive :: deleteFile :: error", error);
             return false;
         }
     }
